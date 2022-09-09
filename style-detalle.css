@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+.item-1{
+    display: flex; justify-content: space-between
+}
+.titulos{
+   color: white; font-family: 'Rajdhani', sans-serif; font-size: 35px; font-style: italic; 
+}
+.subtit{
+    color: gray; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;
+}
+
+.parrafo{
+    color: white; font-family: 'Roboto Condensed', sans-serif; font-size: 20px;
+}
