@@ -1,6 +1,35 @@
 body{
     background-color: black;
 }
+.logo{
+    color: white; font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+header{
+    padding: 30px 0;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .item-1{
     display: flex; justify-content: space-between
 }
@@ -14,3 +43,14 @@ body{
 .parrafo{
     color: white; font-family: 'Roboto Condensed', sans-serif; font-size: 20px;
 }
+.footer{
+    text-align: center;
+     color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
+ }
+ 
+ .padre{
+    flex-direction: row; color: white; display: flex; flex-wrap: nowrap; justify-content: flex-start;
+ }
+ .genero{
+    margin-left: 40px;
+ }
