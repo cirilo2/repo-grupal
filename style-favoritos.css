@@ -1,0 +1,72 @@
+.favoritos{
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 30px; text-align: center;
+}
+body{
+    background-color:black
+}
+.logo{
+    color: white; font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+header{
+    padding: 30px 0;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.peliculas-mas-valoradas{
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 30px;
+}
+
+.a{
+    margin: 20px;
+    border: solid 5px white;
+}
+.item-1{
+    display: flex; justify-content: space-between; 
+}
+
+.titulo{
+    color: gray; font-family: 'Times New Roman', Times, serif; font-size: 10px;
+    display: flex; justify-content: space-between
+
+}
+.series-mas-valoradas{
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 30px;
+}
+.item-2{
+    display: flex; justify-content: space-between; 
+}
+
+.series-mas-populares{
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 30px;
+}
+
+.item-3{
+    display: flex; justify-content: space-between; 
+}
+
+.footer{
+    text-align: center;
+     color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
+ }
