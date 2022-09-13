@@ -30,11 +30,14 @@ header .contenedor{
     align-items: center;
 }
 
-.item-1{
-    display: flex; justify-content: space-between
-}
 .titulos{
-   color: white; font-family: 'Rajdhani', sans-serif; font-size: 35px; font-style: italic; 
+   color: white; font-family: 'Rajdhani', sans-serif; font-size: 35px; font-style: italic; margin-left: 30px;
+}
+.padre{
+    margin-left: 40px;
+}
+.duracion{
+    font-size: 25px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .subtit{
     color: gray; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;
@@ -54,3 +57,5 @@ header .contenedor{
  .genero{
     margin-left: 40px;
  }
+
+ 
