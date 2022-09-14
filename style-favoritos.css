@@ -1,6 +1,9 @@
 .favoritos{
     color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 30px; text-align: center;
 }
+.subsfav{
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 15px; font-style: italic; margin-left: 30px; text-align: center;
+}
 body{
     background-color:black
 }
