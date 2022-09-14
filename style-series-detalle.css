@@ -48,7 +48,7 @@ header .contenedor{
     flex-direction: column;
     margin-right: 30px;
     margin-bottom: 200px;
-    margin-left: 75%;
+    margin-left: 70%;
     font-weight:900;
     font-size: 19px;
     font-family: 'Kanit', sans-serif; 
@@ -67,7 +67,7 @@ header .contenedor{
     font-size: 18px;
     min-height: 550px;
     color: white;
-    background: url(./imgdetalles/SNWH.jpg); 
+    background: url(./imgdetalles/ST.jpg); 
     background-position: center center;
     background-size: cover;
     margin-bottom: 50px;
@@ -100,6 +100,3 @@ header .contenedor{
     text-align: center;
      color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
  }
- 
-
- 
