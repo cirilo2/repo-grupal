@@ -18,16 +18,24 @@
     <header>
         <div class="contenedor">
             
-            
             <a href="./index.html" h2 class="logo">FLIXER</h2> </a>
+            <div id='search-box'>
+                <form action='/search' id='search-form' method='get' target='_top'>
+                <input id='search-text' name='q' placeholder='Busca en Flixer' type='text'/>
+                <button id='search-button' type='submit'> <a class="boton" href="./search-result.html">Busca</a></button>
+                
+                </form>
+                </div>
+              <br>
+              <br>
             <nav>
-                <a href="./index.html">Inicio</a>
-                <a href="#">Favoritos</a>
-                <a class="activo" href="./detalles-pelis.html">Peliculas</a>
+                <a class="activo" href="./index.html">Inicio</a>
+                <a href="./favoritos.html">Favoritos</a>
+                <a href="./detalles-pelis.html">Peliculas</a>
                 <a href="./detalles-series.html">Series</a>
             </nav>
         </div>
-        </header>
+    </header>
         <br>
         <br>
         <main>
