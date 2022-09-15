@@ -1,0 +1,121 @@
+body{
+    background-color:black
+}
+.logo{
+    color: white; font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    text-decoration: none;
+}
+.logo .box{
+        justify-content: center;
+        
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+header{
+    padding: 30px 0;
+}
+header nav a{
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav a:hover,
+header nav a.activo {
+    color: #fff;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-box{
+    position: relative;
+    width: 60%;
+    margin: 0;
+}
+    #search-form {
+    height: 50px;
+    border: 1px solid #000000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 15px;
+    background-color: rgb(75, 69, 69);
+    overflow: hidden;
+}
+#search-text{
+    font-size: 20px;
+    color: #ddd;
+    border-width: 10px;
+    background: transparent;
+}
+    
+#search-box input[type="text"] {
+    width: 90%;
+    padding: 8px 0 12px 1em;
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+#search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 4px;
+    border-width: 0;
+    background-color: #292727;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 15px 5px 0px;
+    cursor: pointer;
+}
+    
+.boton{
+    text-decoration: none;
+     color: white;
+}
+
+.accion{
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
+}
+
+.a{
+    margin: 20px;
+    border: solid 5px white;
+}
+.a:hover{
+    transform: scale(1.1);
+}
+.item-1{
+    display: flex; justify-content: space-between; 
+}
+
+.titulo{
+    color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 10px;
+    display: flex; justify-content: space-between; margin-left: 30px; margin-right: 75px;
+
+}
+
+.footer{
+    text-align: center;
+     color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
+}
+ 
