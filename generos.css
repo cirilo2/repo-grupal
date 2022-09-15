@@ -40,6 +40,7 @@ header .contenedor{
     justify-content: space-between;
     align-items: center;
 }
+
 #search-box {
     position: relative;
     width: 60%;
@@ -85,65 +86,33 @@ header .contenedor{
     border-radius: 0px 15px 5px 0px;
     cursor: pointer;
     }
-    .boton{
+    
+.boton{
         text-decoration: none;
         color: white;
-    }
+ }
 
-.clasificacion{
-    color: white;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    margin-right: 30px;
-    margin-bottom: 200px;
-    margin-left: 70%;
-    font-weight:900;
-    font-size: 19px;
-    font-family: 'Kanit', sans-serif; 
-}
 .generos{
-    text-decoration: none;
-    color: rgb(85, 81, 81);
-    margin-left: 40px;
-    font-weight: bolder;
-}
-.generos:hover{
-    color: #fff;
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
 }
 
-.pelicula-principal{
-    font-size: 18px;
-    min-height: 550px;
-    color: white;
-    background: url(./imgdetalles/SNWH.jpg); 
-    background-position: center center;
-    background-size: cover;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: end;
-    
-    }
-    .pelicula-principal .cont{
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
-    
-    .pelicula-principal .tit{
-        font-weight: 1000;
-        font-size: 45px;
+.a{
+    margin: 20px;
+    border: solid 5px white;
+}
+.a:hover{
+    transform: scale(1.1);
+}
+.item-1{
+    display: flex; justify-content: space-between; 
+}
 
-        font-family: 'Rajdhani', sans-serif; font-size: 55px;
-    }
-    
-    .pelicula-principal .descrip{
-        font-weight: normal;
-        font-size: 25px;
-        line-height: 28px;
-        max-width: 100%;
-        
-    }
-    
+
+.titulo{
+    color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 10px;
+    display: flex; justify-content: space-between; margin-left: 30px; margin-right: 75px;
+
+}
 
 .footer{
     text-align: center;
@@ -151,4 +120,3 @@ header .contenedor{
  }
  
 
- 
