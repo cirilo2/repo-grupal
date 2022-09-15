@@ -11,6 +11,11 @@ body{
     color: white; font-family: 'Bebas Neue', cursive;
     font-weight: normal;
     font-size: 40px;
+    text-decoration: none;
+}
+.logo .box{
+        justify-content: center;
+        
 }
 *{
     margin: 0;
@@ -27,8 +32,13 @@ header{
 header nav a{
     color: #aaa;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav a:hover,
+header nav a.activo {
+    color: #fff;
 }
 
 header .contenedor{
@@ -37,42 +47,122 @@ header .contenedor{
     align-items: center;
 }
 
+#search-box {
+    position: relative;
+    width: 60%;
+    margin: 0;
+    }
+    #search-form {
+    height: 50px;
+    border: 1px solid #000000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 15px;
+    background-color: rgb(75, 69, 69);
+    overflow: hidden;
+    }
+    #search-text {
+    font-size: 20px;
+    color: #ddd;
+    border-width: 10px;
+    background: transparent;
+    }
+    
+    #search-box input[type="text"] {
+    width: 90%;
+    padding: 8px 0 12px 1em;
+    color: rgb(255, 255, 255);
+    outline: none;
+    }
+    #search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 4px;
+    border-width: 0;
+    background-color: #292727;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 15px 5px 0px;
+    cursor: pointer;
+    }
+    
+ .boton{
+        text-decoration: none;
+        color: white;
+    }
 
 .peliculas-mas-valoradas{
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 30px;
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
 }
 
 .a{
     margin: 20px;
     border: solid 5px white;
 }
+.a:hover{
+    transform: scale(1.1);
+}
 .item-1{
     display: flex; justify-content: space-between; 
 }
 
+
 .titulo{
-    color: gray; font-family: 'Times New Roman', Times, serif; font-size: 10px;
-    display: flex; justify-content: space-between
+    color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 10px;
+    display: flex; justify-content: space-between; margin-left: 30px; margin-right: 75px;
 
 }
 .series-mas-valoradas{
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 30px;
-}
-.item-2{
-    display: flex; justify-content: space-between; 
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
 }
 
 .series-mas-populares{
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 30px;
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
 }
 
-.item-3{
-    display: flex; justify-content: space-between; 
+.pelicula-principal{
+font-size: 18px;
+min-height: 500px;
+color: white;
+
+background: url(./img/peli-principal.jpg.jpeg); 
+background-position: center center;
+background-size: cover;
+margin-bottom: 50px;
+display: flex;
+align-items: end;
+
 }
+.pelicula-principal .cont{
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.pelicula-principal .tit{
+    font-weight: 1000;
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: 'Rajdhani', sans-serif; font-size: 55px;
+}
+
+.pelicula-principal .descrip{
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 28px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
 
 .footer{
     text-align: center;
      color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
  }
- 
  
