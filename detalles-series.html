@@ -16,16 +16,24 @@
     <header>
         <div class="contenedor">
             
-            
             <a href="./index.html" h2 class="logo">FLIXER</h2> </a>
+            <div id='search-box'>
+                <form action='/search' id='search-form' method='get' target='_top'>
+                <input id='search-text' name='q' placeholder='Busca en Flixer' type='text'/>
+                <button id='search-button' type='submit'> <a class="boton" href="./search-result.html">Busca</a></button>
+                
+                </form>
+                </div>
+              <br>
+              <br>
             <nav>
-                <a href="./index.html">Inicio</a>
+                <a class="activo" href="./index.html">Inicio</a>
                 <a href="./favoritos.html">Favoritos</a>
                 <a href="./detalles-pelis.html">Peliculas</a>
-                <a class="activo" href="./detalles-series.html">Series</a>
+                <a href="./detalles-series.html">Series</a>
             </nav>
         </div>
-        </header>
+    </header>
         <br>
         <br>
         <main>
@@ -36,9 +44,9 @@
                     <h1> <img class="estrella" src="./imgdetalles/Estrella_amarilla.png" alt="" height="30px" width="30px"> CLASIFICACION: 8,7/10</h1>
                     <h1> <img src="./imgdetalles/reloj.png" alt="" height="30px" width="30px"> DURACION: 51min </h1>
                     <nav>
-                        <a class="generos" href="">Drama</a>
-                        <a class="generos" href="">Fantasia</a>
-                        <a class="generos" href="">Terror</a>
+                        <a class="generos" href="./detalle-genero.html">Accion</a>
+                        <a class="generos" href="./detalle-genero.html">Fantasia</a>
+                        <a class="generos" href="./detalle-genero.html">Terror</a>
                     </nav>
                 </article>
                 

@@ -30,7 +30,8 @@ header nav a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header nav a:hover {
+header nav a:hover,
+header nav a.activo {
     color: #fff;
 }
 
@@ -40,11 +41,11 @@ header .contenedor{
     align-items: center;
 }
 
-#search-box {
+#search-box{
     position: relative;
     width: 60%;
     margin: 0;
-    }
+}
     #search-form {
     height: 50px;
     border: 1px solid #000000;
@@ -53,21 +54,22 @@ header .contenedor{
     border-radius: 15px;
     background-color: rgb(75, 69, 69);
     overflow: hidden;
-    }
-    #search-text {
+}
+#search-text{
     font-size: 20px;
     color: #ddd;
     border-width: 10px;
     background: transparent;
-    }
+}
     
-    #search-box input[type="text"] {
+#search-box input[type="text"] {
     width: 90%;
     padding: 8px 0 12px 1em;
     color: rgb(255, 255, 255);
     outline: none;
-    }
-    #search-button {
+}
+
+#search-button {
     position: absolute;
     top: 0;
     right: 0;
@@ -84,34 +86,36 @@ header .contenedor{
     -moz-border-radius: 0px 5px 5px 0px;
     border-radius: 0px 15px 5px 0px;
     cursor: pointer;
-    }
-    .boton{
-        text-decoration: none;
-        color: white;
-    }
+}
     
-    .resultados{
-        color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; 
-    }
-    
-    .a{
-        margin: 20px;
-        border: solid 5px white;
-    }
-    .a:hover{
-        transform: scale(1.1);
-    }
-    .item-1{
-        display: flex; justify-content: space-between; 
-    }
-    
-    .titulo{
-        color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 10px;
-        display: flex; justify-content: space-between; margin-left: 50px; margin-right: 105px;
-    
-    }
+.boton{
+    text-decoration: none;
+     color: white;
+}
 
-    .footer{
-        text-align: center;
-         color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
-     }
+.accion{
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
+}
+
+.a{
+    margin: 20px;
+    border: solid 5px white;
+}
+.a:hover{
+    transform: scale(1.1);
+}
+.item-1{
+    display: flex; justify-content: space-between; 
+}
+
+.titulo{
+    color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 10px;
+    display: flex; justify-content: space-between; margin-left: 30px; margin-right: 75px;
+
+}
+
+.footer{
+    text-align: center;
+     color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
+}
+ 

@@ -41,9 +41,59 @@ header .contenedor{
     align-items: center;
 }
 
+#search-box {
+    position: relative;
+    width: 60%;
+    margin: 0;
+    }
+    #search-form {
+    height: 50px;
+    border: 1px solid #000000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 15px;
+    background-color: rgb(75, 69, 69);
+    overflow: hidden;
+    }
+    #search-text {
+    font-size: 20px;
+    color: #ddd;
+    border-width: 10px;
+    background: transparent;
+    }
+    
+    #search-box input[type="text"] {
+    width: 90%;
+    padding: 8px 0 12px 1em;
+    color: rgb(255, 255, 255);
+    outline: none;
+    }
+    #search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 4px;
+    border-width: 0;
+    background-color: #292727;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 15px 5px 0px;
+    cursor: pointer;
+    }
+    
+ .boton{
+        text-decoration: none;
+        color: white;
+    }
 
 .peliculas-mas-valoradas{
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 30px;
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
 }
 
 .a{
@@ -64,28 +114,16 @@ header .contenedor{
 
 }
 .series-mas-valoradas{
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 30px;
-}
-.item-2{
-    display: flex; justify-content: space-between; 
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
 }
 
 .series-mas-populares{
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 30px;
-}
-
-.item-3{
-    display: flex; justify-content: space-between; 
-}
-
-.footer{
-   text-align: center;
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
 }
 
 .pelicula-principal{
 font-size: 18px;
-min-height: 550px;
+min-height: 500px;
 color: white;
 
 background: url(./img/peli-principal.jpg.jpeg); 
@@ -117,48 +155,8 @@ align-items: end;
 }
 
 
-#search-box {
-position: relative;
-width: 60%;
-margin: 0;
-}
-#search-form {
-height: 50px;
-border: 1px solid #000000;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 15px;
-background-color: rgb(75, 69, 69);
-overflow: hidden;
-}
-#search-text {
-font-size: 20px;
-color: #ddd;
-border-width: 10px;
-background: transparent;
-}
-
-#search-box input[type="text"] {
-width: 90%;
-padding: 8px 0 12px 1em;
-color: rgb(255, 255, 255);
-outline: none;
-}
-#search-button {
-position: absolute;
-top: 0;
-right: 0;
-height: 50px;
-width: 80px;
-font-size: 18px;
-font-weight: bold;
-color: #fff;
-text-align: center;
-line-height: 4px;
-border-width: 0;
-background-color: #292727;
--webkit-border-radius: 0px 5px 5px 0px;
--moz-border-radius: 0px 5px 5px 0px;
-border-radius: 0px 15px 5px 0px;
-cursor: pointer;
-}
+.footer{
+    text-align: center;
+     color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
+ }
+ 
