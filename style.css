@@ -128,7 +128,7 @@ align-items: end;
  }
 
  @media (max-width: 1024px){
-    .contenedor{
+    .item-1{
         flex-wrap: wrap;
     }
  }

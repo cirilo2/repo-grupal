@@ -135,5 +135,14 @@ header .contenedor{
      color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
  }
  
+ @media (max-width: 1024px){
+    .item-1{
+        flex-wrap: wrap;
+    }
+ }
 
- 
+ @media (max-width: 650px){
+    .item-1{
+        width: 70%;
+    }
+ }
