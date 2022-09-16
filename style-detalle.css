@@ -40,45 +40,21 @@ header .contenedor{
     justify-content: space-between;
     align-items: center;
 }
-#search-box {
-    position: relative;
-    width: 60%;
-    margin: 0;
-    }
-    #search-form {
-    height: 50px;
-    border-radius: 15px;
-    background-color: rgb(75, 69, 69);
-    }
-    #search-text {
-    font-size: 20px;
-    color: #ddd;
-    border-width: 10px;
-    background: transparent;
-    }
-    
-    #search-box input[type="text"] {
-    width: 90%;
-    padding: 8px 0 12px;
-    color: rgb(255, 255, 255);
-    outline: none;
-    }
-    #search-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 64px;
-    width: 80px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    line-height: 4px;
-    border-width: 0;
-    background-color: #292727;
-    border-radius: 0px 15px 5px 0px;
-    cursor: pointer;
-    }
+#search-text{
+    color: white;
+}
+
+
+#search-button{
+    background-color: #aaa;
+    width: 60px;
+    height: 44px;
+    border-radius: 260px;
+}
+
+#search-form input{
+    color: white; width: 450px; height: 40px; background-color: #aaa; border-radius: 250px;
+}
     
 
 .clasificacion{
@@ -93,6 +69,8 @@ header .contenedor{
     font-size: 19px;
     font-family: 'Kanit', sans-serif; 
 }
+
+        
 .generos{
     text-decoration: none;
     color: rgb(85, 81, 81);
