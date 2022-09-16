@@ -150,4 +150,15 @@ align-items: end;
     text-align: center;
      color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
  }
- 
+
+ @media (max-width: 1024px){
+    .contenedor{
+        flex-wrap: wrap;
+    }
+ }
+
+ @media (max-width: 650px){
+    .item-1{
+        width: 70%;
+    }
+ }
