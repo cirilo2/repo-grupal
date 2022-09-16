@@ -128,12 +128,13 @@ header .contenedor{
     }
     
     .pelicula-principal .descrip{
-        font-weight: normal;
+        font-weight:700;
         font-size: 25px;
         line-height: 28px;
         max-width: 100%;
         color: white;
-        
+        font-family: 'Rajdhani';
+        font-style: italic;
     }
 
     .reparto{

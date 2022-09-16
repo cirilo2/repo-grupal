@@ -137,7 +137,8 @@ align-items: end;
 }
 
 .pelicula-principal .descrip{
-    font-weight: normal;
+    font-weight: 700;
+    font-family: 'Rajdhani';
     font-size: 25px;
     line-height: 28px;
     max-width: 100%;
