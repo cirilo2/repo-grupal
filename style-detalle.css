@@ -60,7 +60,7 @@ header .contenedor{
 .clasificacion{
     color: white;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: column;
     margin-right: 30px;
     margin-bottom: 200px;
@@ -69,18 +69,15 @@ header .contenedor{
     font-size: 19px;
     font-family: 'Kanit', sans-serif; 
 }
-
-        
 .generos{
     text-decoration: none;
-    color: rgb(85, 81, 81);
+    color: rgb(110, 101, 101);
     margin-left: 40px;
     font-weight: bolder;
 }
 .generos:hover{
     color: #fff;
 }
-
 .pelicula-principal{
     font-size: 18px;
     min-height: 550px;
@@ -113,7 +110,10 @@ header .contenedor{
         max-width: 100%;
         
     }
-
+    .fav{
+        font-family: 'PT Sans Narrow', sans-serif;;
+        margin-right: 170px;
+            }
     .reparto{
         color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
     }
