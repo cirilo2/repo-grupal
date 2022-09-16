@@ -48,12 +48,8 @@ header .contenedor{
     }
     #search-form {
     height: 50px;
-    border: 1px solid #000000;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 15px;
     background-color: rgb(75, 69, 69);
-    overflow: hidden;
     }
     #search-text {
     font-size: 20px;
@@ -64,7 +60,7 @@ header .contenedor{
     
     #search-box input[type="text"] {
     width: 90%;
-    padding: 8px 0 12px 1em;
+    padding: 8px 0 12px;
     color: rgb(255, 255, 255);
     outline: none;
     }
@@ -72,7 +68,7 @@ header .contenedor{
     position: absolute;
     top: 0;
     right: 0;
-    height: 50px;
+    height: 64px;
     width: 80px;
     font-size: 18px;
     font-weight: bold;
@@ -81,8 +77,6 @@ header .contenedor{
     line-height: 4px;
     border-width: 0;
     background-color: #292727;
-    -webkit-border-radius: 0px 5px 5px 0px;
-    -moz-border-radius: 0px 5px 5px 0px;
     border-radius: 0px 15px 5px 0px;
     cursor: pointer;
     }
