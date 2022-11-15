@@ -73,6 +73,8 @@ header .contenedor{
 .a{
     margin: 20px;
     border: solid 5px white;
+    height: 350px;
+     width: 230px;
 }
 .a:hover{
     transform: scale(1.1);
