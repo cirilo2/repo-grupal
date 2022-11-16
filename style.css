@@ -58,13 +58,15 @@ header .contenedor{
 }
 
 
-.peliculas-mas-valoradas{
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
+.maintitulos{
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 35px; font-style: italic; margin-left: 10px;
 }
 
 .a{
     margin: 20px;
     border: solid 5px white;
+    width: 230px;
+    height: 350px;
     
 }
 .a:hover{
@@ -76,17 +78,14 @@ header .contenedor{
 
 
 .titulo{
-    color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 10px;
-    display: flex; justify-content: space-between; margin-left: 30px; margin-right: 75px;
+    color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 25x;
+    text-decoration: none;
+    
 
 }
-.series-mas-valoradas{
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
-}
 
-.series-mas-populares{
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
-}
+
+
 
 .pelicula-principal{
 font-size: 18px;
