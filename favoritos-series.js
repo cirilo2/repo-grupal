@@ -1,5 +1,5 @@
-let endpoint = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`
 let apiKey = "ba0b591fbb4dcbf21e7a279fceca5d5e"
+let endpoint = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`
 let container = document.querySelector('.favs-container')
 let listContainer = document.querySelector('.list-container')
 
@@ -33,7 +33,7 @@ function getFavsStorage(){
 
 function getAllFavsAndPrint(arrFavs){
     for(let i = 0; i < arrFavs.lenght ; i++)
-    fetch(`"aca va el link"${arrFavs[i].id}`)
+    fetch(`https://api.themoviedb.org/3/movie/${arrFavs[i].id}`)
     .then(function(resp){
         return resp.json()
     })
@@ -42,7 +42,7 @@ function getAllFavsAndPrint(arrFavs){
         <li>
             <article>
                 <img class= 'item1' src='${data.image}'> </img>
-                <a href=detalle-serie?id=${data.id}'> <h5> ${data.title}</h5> </a>
+                <a href=detalle-serie?id=${data.series}'> <h5> ${data.title}</h5> </a>
             </article>
         </li>`
     })
