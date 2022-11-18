@@ -34,7 +34,8 @@ fetch(x)
               <h4 class=""> ${data.overview}</h4>
               <h4 class=""><u>Fecha de estreno:</u> ${data.first_air_date}</h4>
               <h4 class=""><u>Calificación:</u> ${data.vote_average}</h4>
-              <h4 class=""><u>Género:</u>`
+              <h4 class=""><u>Género:</u>
+              <button id='add-button'>Añadir a Favoritos</button>`
 
               for (let i = 0; i< data.genres.length; i++){
                 const elemento = data.genres[i];
