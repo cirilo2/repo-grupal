@@ -27,7 +27,7 @@ fetch(popular)
         `<article class="item-1">
          <a class = "titulo" href="./detalles-pelis.html?idPersonaje=${id}">
         <img class= "a" src= "https://image.tmdb.org/t/p/w500/${imagenes}">
-        <p  > Titulo: ${title}</p>
+        <p > Titulo: ${title}</p>
         <p  >Fecha : ${fecha}</p>
         </a>
         </article>`
