@@ -42,9 +42,7 @@ function getAllFavsAndPrint(arrFavs){
         <li>
             <article>
                 <img class= 'item1' src='${data.image}'> </img>
-                <a href=./?id=${data.id}'>
-                <h5> ${data.title}</h5>
-                </a>
+                <a href=detalle-serie?id=${data.id}'> <h5> ${data.title}</h5> </a>
             </article>
         </li>`
     })
