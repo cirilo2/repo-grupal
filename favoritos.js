@@ -1,3 +1,5 @@
+let endpoint = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`
+let apiKey = "ba0b591fbb4dcbf21e7a279fceca5d5e"
 let container = document.querySelector('.favs-container')
 let listContainer = document.querySelector('.list-container')
 
@@ -40,7 +42,7 @@ function getAllFavsAndPrint(arrFavs){
         <li>
             <article>
                 <img class= 'item1' src='${data.image}'> </img>
-                <a href='./details.html?id=${data.id}'>
+                <a href=./?id=${data.id}'>
                 <h5> ${data.title}</h5>
                 </a>
             </article>
