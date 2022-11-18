@@ -46,6 +46,22 @@ header .contenedor{
 }
 
 
+.maintitulos{
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    
+}
+
+.series{
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    margin-left: 160px;
+}
+
 #search-button{
     background-color: #aaa;
     width: 60px;
@@ -63,9 +79,11 @@ header .contenedor{
  }
 
 .generos{
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 80px;
 }
-
+.generos2{
+    color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 80px;
+}
 .a{
     margin: 20px;
     border: solid 5px white;
@@ -84,6 +102,13 @@ header .contenedor{
 
 }
 
+.bloque{
+    display: flex; justify-content: space-around;
+}
+
+.bloque2{
+    display: flex; justify-content: space-around;
+}
 
 .footer{
     text-align: center;

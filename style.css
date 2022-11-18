@@ -59,7 +59,11 @@ header .contenedor{
 
 
 .maintitulos{
-    color: white; font-family: 'Rajdhani', sans-serif; font-size: 35px; font-style: italic; margin-left: 10px;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    margin-left: 10px;
 }
 
 .a{
@@ -120,6 +124,7 @@ align-items: end;
     max-width: 100%;
     margin-bottom: 20px;
 }
+
 
 
 .footer{
