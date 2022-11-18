@@ -45,3 +45,11 @@ fetch(x)
     console.log(error);
     return error
 })
+
+function addFavoritos() {
+  
+}
+
+function removeFavoritos() {
+
+}
