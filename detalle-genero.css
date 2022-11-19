@@ -65,6 +65,9 @@ header .contenedor{
 .a{
     margin: 20px;
     border: solid 5px white;
+    width: 230px;
+    height: 350px;
+    
 }
 .a:hover{
     transform: scale(1.1);
@@ -74,9 +77,20 @@ header .contenedor{
 }
 
 .titulo{
-    color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 10px;
-    display: flex; justify-content: space-between; margin-left: 30px; margin-right: 75px;
+    color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 15px;
+    display: flex; justify-content: space-between; margin-left: 30px; margin-right: 75px; text-decoration: none;
 
+}
+
+
+
+.maintitulos{
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    margin-left: 10px;
+    text-transform: uppercase;
 }
 
 .footer{

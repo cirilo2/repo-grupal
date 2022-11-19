@@ -109,7 +109,13 @@ header .contenedor{
 .bloque2{
     display: flex; justify-content: space-around;
 }
-
+.generos4{
+    color: white;  
+    font-family: 'Quicksand', sans-serif ; 
+    font-size: 20px; 
+    text-decoration: none;
+    text-transform: uppercase;
+}
 .footer{
     text-align: center;
      color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
