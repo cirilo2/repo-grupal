@@ -35,7 +35,7 @@ fetch(x)
               <h4 class=""><u>Fecha de estreno:</u> ${data.first_air_date}</h4>
               <h4 class=""><u>Calificación:</u> ${data.vote_average}</h4>
               <h4 class=""><u>Género:</u>
-              <button id='add-button'>Añadir a Favoritos</button>`
+              <button id='add-button'>${textoInicial}</button>`
 
               for (let i = 0; i< data.genres.length; i++){
                 const elemento = data.genres[i];
@@ -46,10 +46,15 @@ fetch(x)
     return error
 })
 
-function addFavoritos() {
-  
+function addFavoriteSeries(id, storage){
+  storage.push(id)
+  let storageToString = JSON.stringify(storage)
+  localStorage.setItem('favoritos', storageToString)
 }
 
-function removeFavoritos() {
-
+function removeFavoriteSeries(id, storage){
+  let position = storage.indexOf(id) 
+  storage.splice(position, 1)
+  let storageToString = JSON.stringify(storage)
+  localStorage.setItem('favoritos', storageToString)
 }
