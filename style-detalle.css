@@ -81,8 +81,7 @@ header .contenedor{
 .pelicula-principal{
     font-size: 18px;
     min-height: 550px;
-    color: white;
-    background: url(./imgdetalles/SNWH.jpg); 
+    color: white; 
     background-position: center center;
     background-size: cover;
     margin-bottom: 50px;

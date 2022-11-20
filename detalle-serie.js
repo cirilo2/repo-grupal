@@ -1,47 +1,53 @@
 let apiKey = "ba0b591fbb4dcbf21e7a279fceca5d5e"
-let detalle = `https://api.themoviedb.org/3/tv/${serie_id}?api_key=${apiKey}&language=en-US`
-let qsObject= new URLSearchParams(location.search)
-let serie_id = qsObject.get("id")
+let query = location.search
+let qsObject= new URLSearchParams(query)
+let detail_id = qsObject.get("id")
 
-let detalleSerie = `https://api.themoviedb.org/3/tv/${serie_id}?api_key=ba0b591fbb4dcbf21e7a279fceca5d5e&language=en-US`
-fetch(detalleSerie)
-    .then(function(response){
-      return response.json();
-    })
-    .then(function(data){
-      console.log(data);
-      console.log(data.title)})
+let detallSeries = `https://api.themoviedb.org/3/tv/${detail_id}?api_key=${apiKey}&language=en-US`
 
-      .catch(function (error) {
-        console.log(error);
-        return error
-    })
-let x = `https://api.themoviedb.org/3/tv/${serie_id}/watch/providers?api_key=ba0b591fbb4dcbf21e7a279fceca5d5e`
+fetch(detallSeries)
+  .then(function(response){
+    return response.json();
+})
 
-fetch(x)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(x_data){
-        console.log(x_data);
-        let detalleSeriesSection = document.getElementById("detalles")
-        let serieContenido = ""
-        let imgPrinc = `https://image.tmdb.org/t/p/original`
+  .then(function(data){
+  console.log(data);
+  
+  let section = document.querySelector(".detalleSerie")
 
-        serieContenido += 
-            `<h2 class="tituloPeliculaDetalle">${data.name}</h2>
-              <img class="" src="https://image.tmdb.org/t/p/original${data.poster_path}"/>
-              <h4 class=""> ${data.overview}</h4>
-              <h4 class=""><u>Fecha de estreno:</u> ${data.first_air_date}</h4>
-              <h4 class=""><u>Calificación:</u> ${data.vote_average}</h4>
-              <h4 class=""><u>Género:</u>
-              <button id='add-button'>Añadir a Favoritos</button>`
+  section.innerHTML +=
+  
+  `<div class="cont">
+        <h3 class="tit1">${data.original_name}</h3>
+        <br>
+        <img class="pelicula-principal" src="https://image.tmdb.org/t/p/w500/${data.poster_path}"/>
+        <br>
+        <br>
+        <article class="clasificacion">
+        <h1 class="tit">Sinopsis:</h1> ${data.overview}
+        <h1 class="tit">Valoracion:</h1> ${data.vote_average}
+        <h1 class="tit">Fecha de Estreno:</h1> ${data.first_air_date}
+        <h1 class="tit ">Genero:</h1><ul class=generos>
+                  
+        
+        </article>
+    </div>`
 
-              for (let i = 0; i< data.genres.length; i++){
-                const elemento = data.genres[i];
-                serieContenido += `${elemento.name}`
-              }})
-.catch(function (error) {
-    console.log(error);
-    return error
+    
+    let generosDetalle = document.querySelector(".generos")
+    
+    let generosDetallesCont=''
+
+    for (let i=0; i<data.genres.length; i++){
+        generosDetallesCont +=
+
+
+    `<li class="genero">-${data.genres[i].name}</li>`
+    }
+
+    
+    generosDetalle.innerHTML += generosDetallesCont
+})
+	.catch(function(error){
+	console.log(error);
 })
