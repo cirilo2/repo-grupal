@@ -6,7 +6,7 @@ console.log(location)
 let objMovie = new URLSearchParams(movie)
 let keyword = objMovie.get ("pelicula")
 
-fetch("${endpoint}${apiKey}&query=${keyword}")
+fetch(`${endpoint}${apiKey}&query=${keyword}`)
 .then(function(resp){
     return resp.json()
 })
