@@ -41,8 +41,11 @@ fetch(detallSeries)
     for (let i=0; i<data.genres.length; i++){
         generosDetallesCont +=
 
+      
+    `<li class="genero">${data.genres[i].name}</li>`
+      
 
-    `<li class="genero">-${data.genres[i].name}</li>`
+    
     }
 
     

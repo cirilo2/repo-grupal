@@ -25,7 +25,7 @@ fetch(popular)
         let fecha = data.results[i].release_date
         pelismaspop += 
         `<article class="item-1">
-         <a class = "titulo" href="./detalles-pelis.html?idPersonaje=${id}">
+        <a class = "titulo" href="./detalles-pelis.html?id=${data.results[i].id}">
         <img class= "a" src= "https://image.tmdb.org/t/p/w500/${imagenes}">
         <p > Titulo: ${title}</p>
         <p  >Fecha : ${fecha}</p>

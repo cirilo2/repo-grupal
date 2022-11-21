@@ -44,7 +44,9 @@ header .contenedor{
     color: white;
 }
 
-
+.cont{
+    margin-left: 10px;
+}
 #search-button{
     background-color: #aaa;
     width: 60px;
@@ -55,85 +57,70 @@ header .contenedor{
 #search-form input{
     color: white; width: 450px; height: 40px; background-color: #aaa; border-radius: 250px;
 }
-    
 
 .clasificacion{
+ font-size: 25px;
     color: white;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-right: 30px;
-    margin-bottom: 200px;
-    margin-left: 70%;
-    font-weight:900;
-    font-size: 19px;
-    font-family: 'Kanit', sans-serif; 
+    font-family: 'Rajdhani';
+    font-style: italic;
 }
-.generos{
+.genero{
     text-decoration: none;
     color: rgb(110, 101, 101);
     margin-left: 40px;
-    font-weight: bolder;
+    font-weight:900;
 }
-.generos:hover{
+.genero:hover{
     color: #fff;
+    font-weight: 900;
 }
-.pelicula-principal{
-    font-size: 18px;
-    min-height: 550px;
-    color: white; 
-    background-position: center center;
-    background-size: cover;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: end;
-    
-    }
-    .pelicula-principal .cont{
-        margin: 0 auto;
-        margin-bottom: 100px;
-    }
-    
-    .pelicula-principal .tit{
-        font-weight: 1000;
-        font-size: 45px;
 
-        font-family: 'Rajdhani', sans-serif; font-size: 55px;
+.pelicula-principal{
+    width: 450px;
+    height: 450px;
+    margin-left: 450px;
+    border: white solid 5px;
+}
+
+.descrip{
+    font-size: 25px;
+    color: white;
+    font-family: 'Rajdhani';
+    font-style: italic;
     }
+
+.tit{
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    text-transform: uppercase;
     
-    .pelicula-principal .descrip{
-        font-weight: 700;
-        font-family: 'Rajdhani';
-        font-size: 25px;
-        line-height: 28px;
-        max-width: 100%;
-        
-    }
-    .fav{
-        font-family: 'PT Sans Narrow', sans-serif;;
-        margin-right: 170px;
-            }
-    .reparto{
-        color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
-    }
+}
+
+.tit1{
+    color: white;
+    font-family:fantasy, sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
     
-    .nombres{
-        color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 10px;
-        display: flex; justify-content: space-between; margin-left: 30px; margin-right: 75px;
-    }
+
+
     .item-1{
         display: flex; justify-content: space-between; 
     }
-.circular--square {
-        border-radius: 50%;
- }
+
     
 
 .footer{
     text-align: center;
      color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;
  }
- 
+
  @media (max-width: 1024px){
     .item-1{
         flex-wrap: wrap;

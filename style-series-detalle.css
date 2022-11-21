@@ -107,25 +107,13 @@ header .contenedor{
     display: flex;
     justify-content: center;
 }
-    .fav{
-font-family: 'PT Sans Narrow', sans-serif;;
-margin-right: 170px;
-    }
-
-    .reparto{
-        color: white; font-family: 'Rajdhani', sans-serif; font-size: 25px; font-style: italic; margin-left: 10px;
-    }
     
-    .nombres{
-        color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 10px;
-        display: flex; justify-content: space-between; margin-left: 30px; margin-right: 75px;
-    }
+
+
     .item-1{
         display: flex; justify-content: space-between; 
     }
-.circular--square {
-        border-radius: 50%;
- }
+
     
 
 .footer{
