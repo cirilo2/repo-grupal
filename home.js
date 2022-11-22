@@ -60,7 +60,7 @@ fetch(seriesPop)
         let fecha = data.results[i].first_air_date
         seriesmaspop += 
         `<article class="item-1">
-         <a class = "titulo" href="./detalles-series.html?id=${id}">
+        <a class = "titulo" href="./detalles-series.html?id=${id}">
         <img class= "a" src= "https://image.tmdb.org/t/p/w500/${imagenes}">
         <p class = "margen" >${title}</p>
         <p class = "margen" >Fecha : ${fecha}</p>

@@ -102,6 +102,28 @@ header .contenedor{
     
 }
 
+.botonRecom {
+    background: none;
+    border: none;
+    color: rgb(110, 101, 101);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+}
+.botonRecom:hover{
+    color: #fff;
+    font-weight: 900;
+}
+.fotoSerie{
+height: 280px;
+width: 230px;
+margin: 5px;
+border: solid 5px white;
+}
+
+.fotoSerie:hover{
+    transform: scale(1.1);
+}
 .tit1{
     color: white;
     font-family:fantasy, sans-serif;

@@ -128,5 +128,54 @@ let trailer = `https://api.themoviedb.org/3/movie/${movie_id}/videos?api_key=${a
       .catch (function(error){
           console.log(error)
       })
+
+
+let boton = document.querySelector('.botonRecom')
+
+boton.addEventListener('click', function(){
+  let img = `https://image.tmdb.org/t/p/original`
+  let recomendacionesPeliSection = document.getElementById("recomendacionesPeli")
+    if (boton.innerText == "Ver Recomendaciones"){
+      
+  let recomendaciones = `https://api.themoviedb.org/3/movie/${movie_id}/recommendations?api_key=${apiKey}&language=en-US&page=1`
+    fetch(recomendaciones)
+      .then(function(response){
+        return response.json();
+    })
+      .then(function(data){
+        console.log(data);
+            
+        let contenido = ""
+    
+        for (let i = 0; i < 5; i++){
+                  
+          contenido += 
+          `
+          <a class = "" href="./detalles-pelis.html?id=${data.results[i].id}">   
+          <img src="${img + data.results[i].poster_path}" class="fotoPeli"/>   
+          </a>
+          `
+        }
+      
+        recomendacionesPeliSection.innerHTML = contenido
+      
+    })
+    .catch(function(error){
+      console.log(error);
+    })
+      
+          this.innerText = 'Ocultar Recomendaciones';
+        }
+        else{
+      
+      
+          let contenido = ""
+      
+          recomendacionesPeliSection.innerHTML = contenido
+        
+          this.innerText = 'Ver Recomendaciones';
+      
+        }
+})
       
       
