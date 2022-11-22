@@ -34,7 +34,7 @@ if(type == "pelicula"){
             console.log(primeraSection)
             peliculasdeaccion += 
             `<article >
-            <a class = "titulo" href="detalle-genero.html?id=${id}}"> <h1  ></h1> </a>
+            <a class = "titulo" href="detalle-genero.html?id=${id}}"> <h1></h1> </a>
             <img class= "a" src= "https://image.tmdb.org/t/p/w500/${imagenes}">
             <p class="titulo">  ${title}</p>
             </a>

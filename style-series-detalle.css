@@ -75,6 +75,10 @@ header .contenedor{
     font-weight: 900;
 }
 
+
+.generos4 {
+    text-decoration: none;
+}
 .pelicula-principal{
     width: 450px;
     height: 450px;
@@ -107,12 +111,17 @@ header .contenedor{
     display: flex;
     justify-content: center;
 }
-    
 
 
-    .item-1{
-        display: flex; justify-content: space-between; 
-    }
+.plataforma{
+height: 120px;
+width: 120px;
+}
+
+
+.item-1{
+    display: flex; justify-content: space-between; 
+}
 
     
 

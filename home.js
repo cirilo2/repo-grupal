@@ -1,5 +1,5 @@
 let apiKey = "ba0b591fbb4dcbf21e7a279fceca5d5e"
-let popular = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`
+let popular = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`
 let seriesPop = `https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&page=1`
 let seriesVal = `https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}&language=en-US&page=1`
 
@@ -27,8 +27,8 @@ fetch(popular)
         `<article class="item-1">
         <a class = "titulo" href="./detalles-pelis.html?id=${data.results[i].id}">
         <img class= "a" src= "https://image.tmdb.org/t/p/w500/${imagenes}">
-        <p > Titulo: ${title}</p>
-        <p  >Fecha : ${fecha}</p>
+        <p class = "margen" >${title}</p>
+        <p class = "margen" >Fecha : ${fecha}</p>
         </a>
         </article>`
 
@@ -62,8 +62,8 @@ fetch(seriesPop)
         `<article class="item-1">
          <a class = "titulo" href="./detalles-series.html?id=${id}">
         <img class= "a" src= "https://image.tmdb.org/t/p/w500/${imagenes}">
-        <p  > Titulo: ${title}</p>
-        <p  >Fecha : ${fecha}</p>
+        <p class = "margen" >${title}</p>
+        <p class = "margen" >Fecha : ${fecha}</p>
         </a>
         </article>`
 
@@ -97,8 +97,8 @@ fetch(seriesVal)
         `<article class="item-1">
          <a class = "titulo" href="./detalles-series.html?id=${id}">
         <img class= "a" src= "https://image.tmdb.org/t/p/w500/${imagenes}">
-        <p  > Titulo: ${title}</p>
-        <p  >Fecha : ${fecha}</p>
+        <p class = "margen" >${title}</p>
+        <p class = "margen" >Fecha : ${fecha}</p>
         </a>
         </article>`
 
