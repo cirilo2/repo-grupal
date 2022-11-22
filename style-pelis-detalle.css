@@ -75,6 +75,14 @@ header .contenedor{
     font-weight: 900;
 }
 
+.generos4 {
+    text-decoration: none;
+}
+
+.generos4 a{
+    text-decoration: none;
+}
+
 .pelicula-principal{
     width: 450px;
     height: 450px;
@@ -108,14 +116,38 @@ header .contenedor{
     justify-content: center;
 }
     
+.botonRecom {
+    background: none;
+    border: none;
+    color: rgb(110, 101, 101);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+}
+.botonRecom:hover{
+    color: #fff;
+    font-weight: 900;
+}
 
+.fotoPeli{
+height: 280px;
+width: 230px;
+margin: 5px;
+border: solid 5px white;
+}
 
+.fotoPeli:hover{
+    transform: scale(1.1);
+}
     .item-1{
         display: flex; justify-content: space-between; 
     }
 
     
-
+    .plataforma{
+        height: 120px;
+        width: 120px;
+        }
 .footer{
     text-align: center;
      color: white; font-family: 'Rajdhani', sans-serif; font-size: 10px; font-style: italic;

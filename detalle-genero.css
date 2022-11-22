@@ -78,11 +78,12 @@ header .contenedor{
 
 .titulo{
     color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 15px;
-    display: flex; justify-content: space-between; margin-left: 30px; margin-right: 75px; text-decoration: none;
-
+    margin-left: 40px;
 }
 
-
+.margen{
+    margin-left: 20px;
+}
 
 .maintitulos{
     color: white;

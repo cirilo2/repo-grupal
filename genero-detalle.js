@@ -33,11 +33,11 @@ if(type == "pelicula"){
             let id = data.results[i].id
             console.log(primeraSection)
             peliculasdeaccion += 
-            `<article >
-            <a class = "titulo" href="detalle-genero.html?id=${id}}"> <h1  ></h1> </a>
-            <img class= "a" src= "https://image.tmdb.org/t/p/w500/${imagenes}">
-            <p class="titulo">  ${title}</p>
-            </a>
+            `<article "item-1">
+            <a class = "" href="./detalles-pelis.html?id=${data.results[i].id}">
+            <img class= "a" src= "https://image.tmdb.org/t/p/w500/${imagenes}"> </a>
+            <p class=" titulo">  ${title}</p>
+            
             </article>`
 
         }
@@ -68,10 +68,9 @@ if(type == "pelicula"){
             seriesgenero += 
             `
             <article >
-            <a class = "titulo" href="detalle-genero.html?id=${id}}"> <h1  ></h1> </a>
-            <img class= "a" src= "https://image.tmdb.org/t/p/w500/${imagenes}">
+            <a class = "" href="./detalles-series.html?id=${data.results[i].id}">
+            <img class= "a" src= "https://image.tmdb.org/t/p/w500/${imagenes}"></a>
             <p class="titulo">  ${title}</p>
-            </a>
             </article>`
     
         }
