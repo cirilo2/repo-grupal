@@ -4,7 +4,9 @@ let search = QSobject.get("search")
 console.log(search)
 
 let busqueda = document.querySelector(".resultadosBusqueda")
-busqueda.innerHTML += `Resultados para ${search}:`
+busqueda.innerHTML += `
+<h1 class="maintitulos">RESULTADOS DE LA BUSQUEDA: ${search}: </h1>
+`
 
 let resultPeli = `https://api.themoviedb.org/3/search/movie?api_key=ba0b591fbb4dcbf21e7a279fceca5d5e&language=en-US&page=1&include_adult=false&query=${search}`
 
@@ -56,7 +58,7 @@ fetch(resultSerie)
     .then(function(data){
         console.log(data);
         let resultados = document.querySelector(".resultadosBusqueda");
-        let serieBbuscadas = document.querySelector(".peliculasBuscadas")
+        let seriesBuscadas = document.querySelector(".peliculasBuscadas")
         
         
         if (data.results.length==0){

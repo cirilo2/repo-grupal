@@ -80,9 +80,10 @@ a:hover{
     transform: scale(1.1);
 }
 
+
 .item-1{
 display: flex; justify-content: space-between; 
- }
+}
     
 .titulo{
     color: rgb(255, 255, 255); font-family: 'Quicksand', sans-serif ; font-size: 25x;
