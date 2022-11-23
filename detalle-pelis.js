@@ -12,6 +12,15 @@ fetch(url)
 
   .then(function(data){
   console.log(data);
+  let favoritos = getStorage()
+    let estaLaSerie = favoritos.includes(data.id)
+    let textoInicial = ''
+
+    if(estaLaSerie){  //solo para cuando esta renderizado
+      textoInicial = 'Sacar de Favoritos'   
+    }else{
+      textoInicial = 'Agregar a Favoritos'
+    }
   
   let sectionPeli = document.querySelector(".detallePelis")
 
@@ -33,17 +42,34 @@ fetch(url)
             
           </ul>
                   
-        
+        <button class='btnfav'>${textoInicial}</button>
         </article>
         </div>`
-        let generosDetalle = document.querySelector(".generos")
+
+        let btnFavs = document.querySelector('.btnfav')
+
+    btnFavs.addEventListener('click',function(){
+      let favoritos = getStorage()                    //storage
+      let estaLaPeli = favoritos.includes(data.id)   //validacion
+
+      if(estaLaPeli){
+        removeFavorite(data.id,favoritos)
+        e.target.innerHTML = 'Agregar de Favoritos'
+      }else{
+        addFavorite(data.id,favoritos)
+        e.target.innerHTML = 'Sacar a Favoritos'
+      }
+
+    })
+
+      let generosDetalle = document.querySelector(".generos")
     
-        let generosDetallesCont=''
+      let generosDetallesCont=''
     
-        for (let i=0; i<data.genres.length; i++){
-            generosDetallesCont +=
+      for (let i=0; i<data.genres.length; i++){
+          generosDetallesCont +=
     
-            `<a class="generos4" href="detalle-genero.html?id=${data.genres[i].id}&name=${data.genres[i].name}&type=pelicula"> <li class="genero">${data.genres[i].name}</li>`
+          `<a class="generos4" href="detalle-genero.html?id=${data.genres[i].id}&name=${data.genres[i].name}&type=pelicula"> <li class="genero">${data.genres[i].name}</li>`
           
     
         
@@ -58,6 +84,28 @@ fetch(url)
 console.log(error);
 })
 
+function getStorage(){
+  let storage = localStorage.getItem('favoritos-pelis')
+
+  if(storage!== null && storage !== undefined){
+    return JSON.parse(storage)
+  } else{
+    return []
+  }
+}
+
+function addFavorite(id, storage){
+  storage.push(id)
+  let storageToString = JSON.stringify(storage)
+  localStorage.setItem('favoritos-pelis',storageToString)
+}
+
+function removeFavorite(id, storage){
+  let position = storage.indexOf(id)
+  storage.splice(position,1)
+  let storageToString = JSON.stringify(storage)
+  localStorage.setItem('favoritos-pelis',storageToString)
+}
 
 
 
