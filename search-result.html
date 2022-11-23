@@ -19,7 +19,7 @@
             <a href="./index.html" h2 class="logo">FLIXER</h2> </a>
             <div id='search-box'>
                 <form action='./search-result.html' id='search-form' method='get' target='_top'>
-                <input id='search-text' name='q' placeholder='Busca en Flixer' type='text'/>
+                <input id='search-text' name='search' placeholder='Busca en Flixer' type='text'/>
                 <button id='search-button' type='submit'> Busca</button>
                 
                 </form>
@@ -29,52 +29,15 @@
             <nav>
                 <a class="activo" href="./index.html">Inicio</a>
                 <a href="./favoritos.html">Favoritos</a>
-                <a href="./detalles-pelis.html">Peliculas</a>
-                <a href="./detalles-series.html">Series</a>
                 <a href="./generos.html">Generos</a>
             </nav>
         </div>
     </header>
     <br>
     <br>
-    <section class="resultados">
-        <h1> RESULTADOS DE LA BUSQUEDA </h1>
-        
-        <article class="item-1">
-            <img class="a" src="./imgsearch/topgun.jpg" alt="" height="150px" width="220px">
-            <img class="a" src="./imgsearch/into the spiderverse.jfif" alt="" height="150px" width="220px">
-            <img class="a" src="./imgsearch/invinible.jpg" alt="" height="150px" width="220px">
-            <img class="a" src="./imgsearch/Thor.jpg" alt="" height="150px" width="220px">
-           <img class="a" src="./imgsearch/SW.jpg" alt="" height="150px" width="220px">
-        </article>
-        
-        <article class="titulo">
-            <h2>Top gun: Maverick</h2>
-            <h2>Spiderman:Into the spiderverse</h2>
-            <h2>Invincible</h2>
-            <h2>Thor:Love and Thunder</h2>
-            <h2>Star wars III</h2>
-        </article>
-
-    
-  
-    <article class="item-1">
-        <img class="a" src="./imgsearch/civil war.jfif" alt="" height="150px" width="220px">
-        <img class="a" src="./imgsearch/harry.jpg" alt="" height="150px" width="220px">
-        <img class="a" src="./imgsearch/Pulp.jpg" alt="" height="150px" width="220px">
-        <img class="a" src="./imgsearch/mando.jfif" alt="" height="150px" width="220px">
-       <img class="a" src="./imgsearch/jurassic.jpg" alt="" height="150px" width="220px">
-    </article>
-    
-    <article class="titulo">
-        <h2>Civil war</h2>
-        <h2>Harry potter</h2>
-        <h2>Pulp fiction</h2>
-        <h2>The mandalorian</h2>
-        <h2>Jurassic World</h2>
-    </article>
-
-</section>
+    <h1 class="maintitulos">Resultados de la busqueda</h1>
+    <h1 class="resultadosBusqueda"></h1>
+    <section class="peliculasBuscadas"></section>
 <br>
 <br>
 <br>
@@ -86,6 +49,6 @@
             <a href="./index.html"><img  src="./img/logo.svg" alt="" height="80px" width="100px"></a>
         </article>
     </section>
-<script src="search-result.js"></script>
+<script src="searchresults.js"></script>
 </body>
 </html>
