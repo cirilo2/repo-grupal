@@ -180,8 +180,6 @@ fetch (trailer)
 
 let boton = document.querySelector('.botonRecom')
 
-
-
 boton.addEventListener('click', function(){
   let img = `https://image.tmdb.org/t/p/original`
   let recomendacionesSeriesSection = document.getElementById("recomendacionesSerie")
