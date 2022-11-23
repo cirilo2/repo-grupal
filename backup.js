@@ -12,18 +12,7 @@ fetch(detallSeries)
 
   .then(function(data){
   console.log(data);
-    let favoritos = getStorage()
-    let estaLaSerie = favoritos.includes(data.id)
-    let textoInicial = ''
-
-    if(estaLaSerie){  //solo paraq cuando esta renderizado
-      textoInicial = 'Sacar de Favoritos'   
-    }else{
-      textoInicial = 'Agregar a Favoritos'
-    }
-
   
-
   let section = document.querySelector(".detalleSerie")
 
   section.innerHTML +=
@@ -42,25 +31,11 @@ fetch(detallSeries)
         <h1 class="tit">Fecha de Estreno:</h1> ${data.first_air_date}
         <br>
         <h1 class="tit ">Genero:</h1><ul class=generos>
-        <buton class='btnfav'>${textoInicial}<buton/>
+                  
         
         </article>
     </div>`
-    let btnFavs = document.querySelector('.btnfav')
-    
-    btnFavs.addEventListener('click',function(){
-      let favoritos = getStorage()
-      let estaLaSerie = favoritos.includes(data.id)
 
-      if(estaLaSerie){
-        removeFavorite(data.id,favoritos)
-        e.target.innerHTML = 'Agregar de Favoritos'
-      }else{
-        addFavorite(data.id,favoritos)
-        e.target.innerHTML = 'Sacar a Favoritos'
-      }
-
-    })
     
     let generosDetalle = document.querySelector(".generos")
     
@@ -83,28 +58,6 @@ fetch(detallSeries)
 	console.log(error);
 })
 
-function getStorage(){
-  let storage = localStorage.getItem('favoritos-series')
-
-  if(storage!== null && storage !== undefined){
-    return JSON.parse(storage)
-  } else{
-    return []
-  }
-}
-
-function addFavorite(id, storage){
-  storage.push(id)
-  let storageToString = JSON.stringify(storage)
-  localStorage.setItem('favoritos-series',storageToString)
-}
-
-function removeFavorite(id, storage){
-  let position = storage.indexOf(id)
-  storage.splice(position,1)
-  let storageToString = JSON.stringify(storage)
-  localStorage.setItem('favoritos-series',storageToString)
-}
 
 
 let provedorSeries = `https://api.themoviedb.org/3/tv/${detail_id}/watch/providers?api_key=${apiKey}`
