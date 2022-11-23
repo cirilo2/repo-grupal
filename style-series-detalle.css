@@ -163,3 +163,11 @@ width: 120px;
         width: 70%;
     }
  }
+ .btnfavs{
+    background: none;
+    border: none;
+    color: rgb(110, 101, 101);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+ }
