@@ -16,7 +16,7 @@ fetch(detallSeries)
     let estaLaSerie = favoritos.includes(data.id)
     let textoInicial = ''
 
-    if(estaLaSerie){  //solo paraq cuando esta renderizado
+    if(estaLaSerie){  //solo para cuando esta renderizado
       textoInicial = 'Sacar de Favoritos'   
     }else{
       textoInicial = 'Agregar a Favoritos'
@@ -49,8 +49,8 @@ fetch(detallSeries)
     let btnFavs = document.querySelector('.btnfav')
 
     btnFavs.addEventListener('click',function(){
-      let favoritos = getStorage()
-      let estaLaSerie = favoritos.includes(data.id)
+      let favoritos = getStorage()                    //storage
+      let estaLaSerie = favoritos.includes(data.id)   //validacion
 
       if(estaLaSerie){
         removeFavorite(data.id,favoritos)
