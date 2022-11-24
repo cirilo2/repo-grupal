@@ -41,14 +41,14 @@ fetch(detallSeries)
         <br>
         <h1 class="tit">Fecha de Estreno:</h1> ${data.first_air_date}
         <br>
-        <h1 class="tit ">Genero:</h1><ul class=generos>
+        <h1 class="tit ">Genero:</h1><ul class=generos></ul>
         <button class='btnfav'>${textoInicial}</button>
         
         </article>
     </div>`
     let btnFavs = document.querySelector('.btnfav')
 
-    btnFavs.addEventListener('click',function(){
+    btnFavs.addEventListener('click',function(e){
       let favoritos = getStorage()                    //storage
       let estaLaSerie = favoritos.includes(data.id)   //validacion
 
